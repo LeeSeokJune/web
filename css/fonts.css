@@ -1,0 +1,10 @@
+@font-face { 
+    font-family: "Suit";
+    src: url("file:///Users/leeseokjune/Desktop/louishome_front/web/fons/SUIT-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face { 
+    font-family: "Jalnan";
+    src: url("file:///Users/leeseokjune/Desktop/louishome_front/web/fons/Jalnan.ttf") format("truetype");
+    font-weight: normal;
+}
