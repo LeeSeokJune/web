@@ -1,1 +1,4 @@
 * { font-family: 'Suit';}
+body{width: 1188px;height: 840px; border: 1px solid black; }
+body .inner{margin: 28px; height: 784px;border: 1px solid ; }
+
