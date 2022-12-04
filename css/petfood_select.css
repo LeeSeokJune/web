@@ -1,2 +1,7 @@
 #header_txt{font-size:20px; text-align: center;}
 .selected_petfood{ width: 1200px; height:200px; border: 1px solid black;}
+
+.select_button{all:unset;}
+.select_button:hover{cursor: pointer;}
+.select_form{width: 250px; height: 350px;  display: inline-block; padding: 10px; vertical-align: top;}
+.select_form .select_img img{width: 250px;height: 250px; border: 1px solid black; }

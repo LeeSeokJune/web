@@ -1,4 +1,4 @@
-const petfood_list = [
+export const petfood_list = [
     {
       'product_code': 'A000001',
       'pet': '강아지',
