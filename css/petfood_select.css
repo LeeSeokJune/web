@@ -1,7 +1,21 @@
-#header_txt{font-size:20px; text-align: center;}
-.selected_petfood{ width: 1200px; height:200px; border: 1px solid black;}
+.empty_text{ font-size: 25px; line-height: 330px; text-align: center; color: rgb(167, 166, 166);}
+#header_txt{font-size:30px; text-align: center; height: 100px;line-height: 100px;}
+#show_petfood{width: 1200px; margin-top: 55px;}
+#show_selected_petfood_form:first-child{margin-left: 40px; }
+.selected_petfood_container{ width: 1200px; height:330px; background-color: #F8F8F8; overflow-x: auto; white-space: nowrap;}
+.selected_petfood_container .delete_form{position: relative; width: 200px;height: 250px; border: 2px solid #001a5e; border-radius: 10px; white-space: normal; margin:20px;margin-top: 40px; background-color: white; }
+.delete_button{all: unset}
+.delete_button:hover{cursor: pointer;}
+.delete_form .delete_img img{ width: 200x; height: 200px;}
+.delete_form .remove_button{position: absolute;top: -12px; right: -12px; width: 25px; height: 24px; border-radius: 24px; background-color: #001a5e; color:white; text-align: center; line-height: 25px; font-size: 25px;}
+.delete_form .product_name{ padding: 0px 10px; text-align: center;}
 
 .select_button{all:unset;}
 .select_button:hover{cursor: pointer;}
-.select_form{width: 250px; height: 350px;  display: inline-block; padding: 10px; vertical-align: top;}
-.select_form .select_img img{width: 250px;height: 250px; border: 1px solid black; }
+.select_form{position: relative; width: 230px;  display: inline-block; padding: 35px; vertical-align: top; white-space: normal; }
+.select_form .select_img{ background-color: #f9f9f9; border-radius: 10px;}
+.select_form .select_img img{width: 230px;height: 230px; }
+.select_form .product_name{ margin-top: 10px;}
+.save_button_container{text-align: center; margin-top: 20px}
+.save_button{all:unset; width: 150px; height: 40px; background-color: #001a5e; color: white; border-radius: 10px;}
+.save_button:hover{cursor: pointer;}

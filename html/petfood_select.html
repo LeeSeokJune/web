@@ -10,11 +10,15 @@
 
 <body>
     <div id="header_txt">루이가 먹을 수 있는 사료 리스트</div>
-    <div class="selected_petfood">
+    <div class="selected_petfood_container">
+        <div id="show_selected_petfood_form"></div>
+    </div>
+    <div class="save_button_container">
+        <button class="save_button">저장하기</button>
     </div>
     <div id="show_petfood"></div>
 </body>
 
 <script>
-    window.onload = show_petfood_data;
+    show_petfood_data;
 </script>
