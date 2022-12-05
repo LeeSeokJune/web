@@ -60,8 +60,8 @@ function select_petfood(data){
 
 function delete_selected_petfood(data){
     var i;
-    for(var index=0; index<petfood_list.length;index++){
-        if(petfood_list[index]['name'] == data['name']){
+    for(var index=0; index<selected_petfood.length;index++){
+        if(selected_petfood[index]['name'] == data['name']){
             i=index; break;
         }
     }
@@ -116,7 +116,7 @@ function get_petfood(){
         },
         body:JSON.stringify({'member_id':'jjhy95','name':'꾸꾸까까'},)
     }).then((response)=> response.json()).then((json_data)=>{
-
+        if(json_data['petfood']!='[]'){
         selected_petfood_name = str_to_list(json_data['petfood']);
         console.log(selected_petfood_name)
         for(var index=0; index < selected_petfood_name.length; index++){
@@ -128,6 +128,7 @@ function get_petfood(){
                 }
             } 
         }
+    }
         show_petfood_data();
     })
 }
