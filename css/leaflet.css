@@ -1,5 +1,7 @@
 * { font-family: 'Suit';}
-#orange{background-color: #F39800}
+#orange{background-color: #F39800;}
+#orange_text{color: #F39800;}
+#orange_icon{filter: invert(54%) sepia(66%) saturate(1757%) hue-rotate(8deg) brightness(103%) contrast(103%);}
 body{width: 1188px;height: 840px; border: 1px solid black; }
 body .inner{height: 784px;}
 .half_form{display: inline-block; width: 534px; height: 784;border: 1px solid ; vertical-align: top; margin:28px}
@@ -31,9 +33,11 @@ body .inner{height: 784px;}
 .petfood_form{display: inline-block;width: 200px;}
 .petfood_form:hover{cursor: pointer;}
 
-.pet_foot{ margin-left: 40px; font-family: "Jalnan"; font-size: 14px;margin-top:40px}
+.pet_foot{ margin-left: 40px; margin-top:40px}
 .pet_foot div{position: relative;}
-.pet_foot button{ all:unset; width: 10px;height: 10px; border-radius: 10px;background-color: #001A5E;}
-.pet_foot button span{ line-height: 40px;}
-.pet_foot button img{position:absolute; top:-30px; left:-5px; width: 20px;}
-.pet_foot hr{display: inline-block;width: 55px;height: 2px; background-color: #001A5E; margin: 4px 0px 27px 0px;}
+.pet_foot button{ all:unset; width: 10px;height: 10px; border-radius: 10px;background-color: #001A5E;margin: 0 -5px 0 -5px}
+.pet_foot button .number{ line-height: 45px; font-family: "Jalnan"; font-size: 14px;}
+.pet_foot button img{position:absolute; top:-30px; left:-10px; width: 20px; display: none;}
+.pet_foot hr{display: inline-block;width: 68px;height: 2px; background-color: #001A5E; margin: 4px 0px 27px 0px;}
+.recommend_cycle{width: 450px;text-align: end; font-size: 13px; font-weight: 500;margin-bottom: 16px;}
+.recommend_cycle span{font-size: 12px;}

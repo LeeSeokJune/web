@@ -85,6 +85,32 @@ function set_pet_info(){
     // TODO : 정기구독사료 교체 방법에 이름 추가
 }
 
+function onclick_petfoot(index){
+    var petfoot_list = document.querySelectorAll('.pet_foot > div > button >img');
+    for(var i=0;i<7;i++){
+        petfoot_list[i].style.display = 'none';
+        if(index == i){
+            petfoot_list[i].style.display = 'inline';
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function list_to_str(list_data){
     if(typeof(list_data) == 'object'){
         return JSON.stringify(list_data).replaceAll('[','').replaceAll(']','').replaceAll('"','').replaceAll(',',' ').trim().replaceAll(' ',',  ');
