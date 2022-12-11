@@ -1,7 +1,7 @@
 <head>
-    <script type="text/javascript" src="file:///Users/leeseokjune/Desktop/louishome_front/web/js/leaflet.js"></script>
-    <link rel="stylesheet" type="text/css" href="file:///Users/leeseokjune/Desktop/louishome_front/web/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="file:///Users/leeseokjune/Desktop/louishome_front/web/css/leaflet.css">
+    <script type="text/javascript" src="../js/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/leaflet.css">
 
 </head>
 
@@ -9,6 +9,11 @@
     <div class="inner">
         <div class="half_form">
             <h1 class="main_title">루이 식단 가이드</h1>
+            <dialog id="input_dialog">
+                아이디<input type="text"><br>
+                펫 이름<input type="text"><br>
+                <button onclick="close_dialog()">확인</button>
+            </dialog>
             <div class="pet_info">2019년 11월 29일생 / 포메라니안 / 수컷 / 중성화 O / 3.5kg</div>
             <div class="alg_health">
                 <div>알레르기</div>
@@ -19,10 +24,14 @@
             <div class="container_form">
                 <div class="title">현재 급여 중인 사료</div>
                 <div class="contents">
-                    <div class="current_img"><img src="../images/파미나/[파미나] N&D 독 그레인프리 펌프킨 멧돼지&사과 미니.png"></div>
+                    <div onclick="petfood_dialog(0)" class="current_img" id="img_0">
+                        <img src="../images/파미나/[파미나] N&D 독 그레인프리 펌프킨 멧돼지&사과 미니.png">
+                        <div id="hash_tag_0" class="hash_tag">#단일단백질 #멧돼지 #그레인프리</div>
+                    </div>
+
                     <div class="petfood_info">
-                        <div id="petfood_title">[파미나] N&D 펌프킨 멧돼지&사과 미니</div>
-                        <div clss="info">
+                        <div class="petfood_title" id="petfood_title_0">[파미나] N&D 펌프킨 멧돼지&사과 미니</div>
+                        <div class="info">
                             <div class="main_info">
                                 <div>권장 연령</div>
                                 <div id="age">전연령</div><br>
@@ -31,9 +40,59 @@
                             </div>
                             <br>
                             <div class="sub_info">
-                                <img src="../icons/check_box.png">
+                                <ul>
+                                    <li>알레르기 예방을 위한 단일 단백질 사료</li>
+                                    <li>높은 프로바이오틱스 함유량</li>
+                                    <li>맛과 영양을 더하는 냉장 압착 건조 과일</li>
+                                </ul>
                             </div>
+                            <dialog class="petfood_dialog"></dialog>
                         </div>
+                    </div>
+                    <div class="pet_foot">
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <button><span>0</span>
+                                <img src="../icons/pet_foot.png">
+                            </button>
+                        </div>
+                        <br>
+                        권장 사료 교체 주기(개월)
                     </div>
                 </div>
             </div>

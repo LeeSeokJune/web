@@ -1,25 +1,39 @@
 * { font-family: 'Suit';}
+#orange{background-color: #F39800}
 body{width: 1188px;height: 840px; border: 1px solid black; }
 body .inner{height: 784px;}
 .half_form{display: inline-block; width: 534px; height: 784;border: 1px solid ; vertical-align: top; margin:28px}
 .main_title{margin:0 0 20px 0; font-size: 25px; color: #001A5E}
-
+.main_title:hover{cursor: pointer;}
 .pet_info{height: 40px; background-color: #F7EEE3; text-align: center; line-height: 40px;margin-bottom: 12px;}
 
 .alg_health{margin-bottom:8px;}
 .alg_health div{width: 100px; margin-bottom: 8px; display: inline-block; font-size: 14px; color: #001A5E;font-weight: 600;}
-.alg_health #alg, #health{color: black; font-weight: 400;}
+.alg_health #alg, #health{color: black; font-weight: 400;width: auto;} 
 
 .container_form .title{height: 36px; background-color: #B4C5E3; text-align: center;line-height: 36px; color: #001A5E; font-size: 16px; font-weight: 500;}
 .container_form .title{border: 1px solid #B7C9E8;border-bottom: 0; border-top-left-radius: 10px; border-top-right-radius: 10px;}
 .container_form .contents{border: 1px solid #B7C9E8; border-top: 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 .contents div{display: inline-block; vertical-align: top;}
 .current_img{width: 140px; height: 140px; border-radius: 10px; background-color: #B4C5E3; margin: 20px 40px 0px 40px}
+.current_img:hover{cursor: pointer;}
 .contents img {width: 100%;}
+.contents .hash_tag{font-size: 14px; color:#727171; text-align: center;width: 140px; height:52px;}
 
-.petfood_info #petfood_title{display:block;width:308px;height: 28px; font-size: 14px;; background-color: #DCDDDD; margin: 20px 0 16px 0; line-height: 28px; text-align: center; }
+.petfood_info .petfood_title{display:block;width:308px;height: 28px; font-size: 14px;; background-color: #DCDDDD; margin: 20px 0 16px 0; line-height: 28px; text-align: center; }
 .petfood_info .main_info{border-left: 2px solid #DCDDDD;padding-left: 16px;}
 .main_info div{width: 80px; font-size: 14px; font-weight: 600; color: #595757;}
-.main_info #age,#protein{font-weight: 400;}
-.sub_info{margin-top: 24px;}
-.sub_info img{width: 14px;height: 14px;}
+.main_info #age,#protein{font-weight: 400;width: auto;}
+.sub_info ul{padding: 0}
+.sub_info ul li{list-style: none; background-image: url(../icons/check_box.png);background-repeat: no-repeat;background-position: left center;background-size: 18px; padding:0 0 0px 32px; font-size: 14px; vertical-align: top;margin-bottom: 12px;}
+
+.petfood_dialog{width: 1200px;}
+.petfood_form{display: inline-block;width: 200px;}
+.petfood_form:hover{cursor: pointer;}
+
+.pet_foot{ margin-left: 40px; font-family: "Jalnan"; font-size: 14px;margin-top:40px}
+.pet_foot div{position: relative;}
+.pet_foot button{ all:unset; width: 10px;height: 10px; border-radius: 10px;background-color: #001A5E;}
+.pet_foot button span{ line-height: 40px;}
+.pet_foot button img{position:absolute; top:-30px; left:-5px; width: 20px;}
+.pet_foot hr{display: inline-block;width: 55px;height: 2px; background-color: #001A5E; margin: 4px 0px 27px 0px;}
