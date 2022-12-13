@@ -47,7 +47,7 @@ body .inner{height: 784px;}
 
 /* 건강고려사항 추천 간식/영양제 */
 .sub_title{text-align: center; font-size: 14px; color: #595757; padding: 10px 0;}
-.contents .qr_list{display: flex;justify-content: space-evenly;}
+.contents .qr_list{display: flex;justify-content: space-evenly; margin-bottom:10px;}
 .qr_list .qr_form{ text-align: center; margin: 5px 0; width: 90px;}
 .qr_list img{ width: 80px; height: 80px;}
 .qr_list p {margin: 8px 0 10px 0 ; font-size: 15px; font-weight: bold; color:#001A5E;}
