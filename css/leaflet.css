@@ -13,6 +13,7 @@ body .inner{height: 784px;}
 .alg_health div{width: 100px; margin-bottom: 8px; display: inline-block; font-size: 14px; color: #001A5E;font-weight: 600;}
 .alg_health #alg, #health{color: black; font-weight: 400;width: auto;} 
 
+.container_margin{margin-top:28px; }
 .container_form .title{height: 36px; background-color: #B4C5E3; text-align: center;line-height: 36px; color: #001A5E; font-size: 16px; font-weight: 500;}
 .container_form .title{border: 1px solid #B7C9E8;border-bottom: 0; border-top-left-radius: 10px; border-top-right-radius: 10px;}
 .container_form .contents{border: 1px solid #B7C9E8; border-top: 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
@@ -41,3 +42,10 @@ body .inner{height: 784px;}
 .pet_foot hr{display: inline-block;width: 68px;height: 2px; background-color: #001A5E; margin: 4px 0px 27px 0px;}
 .recommend_cycle{width: 450px;text-align: end; font-size: 13px; font-weight: 500;margin-bottom: 16px;}
 .recommend_cycle span{font-size: 12px;}
+
+.sub_title{text-align: center; font-size: 14px; color: #595757;}
+.contents .qr_list{display: flex;justify-content: space-evenly;}
+.qr_list .qr_form{ text-align: center; margin: 5px 0; width: 90px;}
+.qr_list img{ width: 80px; height: 80px;}
+.qr_list p {margin: 8px 0 10px 0 ; font-size: 15px; font-weight: bold; color:#001A5E;}
+

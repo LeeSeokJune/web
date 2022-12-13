@@ -1,6 +1,9 @@
 var pet={'member_id':'jjhy95','name':'꾸꾸까까'};
 var louis_url = 'http://52.79.233.120:8000/';
 var petfood_index = [0,1,2,3];
+var qr_text = ['diet', 'joint', 'kidney', 'pancreas', 'recovery', 'skin'];
+var qr_text_kor = ['다이어트', '관절케어', '신장케어', '췌장케어', '기력 회복', '피부/피모케어'];
+var qr_index = [1,0];
 window.onload = function(){
     document.querySelector('.main_title').addEventListener('click',show_input_dialog);
     // petfood_dialog(0);
@@ -96,8 +99,23 @@ function onclick_petfoot(index){
     }
 }
 
-
-
+function onclick_qr(index){
+    var query = document.querySelectorAll('.qr_form')
+    var form_0 = query[0];
+    var form_1 = query[1];
+    if(qr_index[index] < qr_text.length-1){
+        qr_index[index]++;
+    }else{
+        qr_index[index] = 0;
+    }
+    if(qr_index[0] == qr_index[1]){
+        onclick_qr(index);
+    }
+    form_0.querySelector('img').src = '../qr/'+qr_text[qr_index[0]]+'.png'
+    form_0.querySelector('p').textContent = qr_text_kor[qr_index[0]]
+    form_1.querySelector('img').src = '../qr/'+qr_text[qr_index[1]]+'.png'
+    form_1.querySelector('p').textContent = qr_text_kor[qr_index[1]]
+}
 
 
 
