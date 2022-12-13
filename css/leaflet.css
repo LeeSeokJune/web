@@ -1,4 +1,5 @@
 * { font-family: 'Suit';}
+p {margin:0}
 #orange{background-color: #F39800;}
 #orange_text{color: #F39800;}
 #orange_icon{filter: invert(54%) sepia(66%) saturate(1757%) hue-rotate(8deg) brightness(103%) contrast(103%);}
@@ -43,9 +44,21 @@ body .inner{height: 784px;}
 .recommend_cycle{width: 450px;text-align: end; font-size: 13px; font-weight: 500;margin-bottom: 16px;}
 .recommend_cycle span{font-size: 12px;}
 
-.sub_title{text-align: center; font-size: 14px; color: #595757;}
+.sub_title{text-align: center; font-size: 14px; color: #595757; padding: 10px 0;}
 .contents .qr_list{display: flex;justify-content: space-evenly;}
 .qr_list .qr_form{ text-align: center; margin: 5px 0; width: 90px;}
 .qr_list img{ width: 80px; height: 80px;}
 .qr_list p {margin: 8px 0 10px 0 ; font-size: 15px; font-weight: bold; color:#001A5E;}
 
+.cycle_container{ padding-bottom:260px;}
+.cycle{position: relative;}
+.cycle img {width: 80px;height: 80px;border-radius: 100px;border: 2px solid #b7c9e8;position: absolute;}
+.cycle .icon1 { left: 227px;top:10px}
+.cycle .icon2 {position:absolute; border: 0; left: 227px; top:100px}
+.cycle .icon3 {position: absolute; left: 147px;top:150px}
+.cycle .icon4 {position: absolute; left: 307px;top:150px}
+.cycle span{font-size: 14px; font-weight: 500;color:#001A5E;width: 100px;}
+.cycle .text1 {position: absolute; left: 310px; top:10px}
+.cycle .text2 {position: absolute; left: 120px; top:220px}
+.cycle .text3 {position: absolute; left: 390px; top:220px}
+.cycle .text4 {position: absolute; left: 330px; top:80px; color: #595757; }
