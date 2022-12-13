@@ -85,6 +85,7 @@ function set_pet_info(){
     document.querySelector('.pet_info').textContent = pet_info
     document.querySelector('#alg').textContent = list_to_str([...pet['alg'], ...pet['alg_sub']])
     document.querySelector('#health').textContent = list_to_str(pet['health'])
+    document.querySelector('.explain').innerHTML = "권장 교체 시기(4-6개월차) 부터는 루이스홈이 "+pet['name']+"가 먹을 수 있는 샘플 사료를<br><br>보내드립니다. 샘플 사료 급여 후 교체 여부를 결정합니다."
     // TODO : 정기구독사료 교체 방법에 이름 추가
 }
 

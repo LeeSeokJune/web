@@ -71,8 +71,18 @@ body .inner{height: 784px;}
 
 
 /* 정기구독 사료 교체 방법 */
-.subscribe_form .number{font-family: "Jalnan"; font-size: 21px; color: #001A5E; width: 80px;height: 80px; text-align: center; line-height: 80px;}
-.subscribe_form p{display: inline-block; margin-top: 20px;line-height: 8px;}
+.subscribe_form .number{font-family: "Jalnan"; font-size: 21px; color: #001A5E; width: 80px;height: 60px; text-align: center; line-height: 80px;}
+.subscribe_form p{display: inline-block; margin-top: 16px;line-height: 8px;}
 .subscribe_form .sub_title{font-size: 14px; font-weight: bold; color:#001A5E;}
 .subscribe_form .explain{ font-size: 13px; font-weight: 300; color:#595757;}
 .subscribe_form hr{width: 500px; margin-left: 18px; border: 1px solid #b7c9e8; }
+
+/* 사료 교체 주의 사항 */
+.caution{ margin-top: 16px; font-size: 14px; color:#001A5E;margin-left: 5px; }
+.caution hr{margin-left: 10px; display: inline-block; width: 405px; vertical-align: middle; background-color: #b7c9e8;}
+.food_container{display: flex;     justify-content: space-evenly;}
+.food_form{position: relative; display: inline-block; margin-top: 16px; text-align: center;}
+.food_form img{ width: 52px;}
+.food_form .percent{position: absolute; font-size: 12px; color: #001A5E; font-weight: bold; left: -16px; top:-4px; }
+.food_form .days{ font-size: 14px; font-weight: 300;color:#595757; left: 10px;top:40px; margin-top: 6px;}
+.mix_text {font-size: 14px; color:#595757; text-align: center;margin-top: 6px;}
