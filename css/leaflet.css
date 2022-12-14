@@ -1,11 +1,12 @@
 * { font-family: 'Suit';}
 p {margin:0}
+body {margin: 0; }
 #orange{background-color: #F39800;}
 #orange_text{color: #F39800;}
 #orange_icon{filter: invert(54%) sepia(66%) saturate(1757%) hue-rotate(8deg) brightness(103%) contrast(103%);}
 body{width: 1188px;height: 840px; border: 1px solid black; }
 body .inner{height: 784px;}
-.half_form{display: inline-block; width: 534px; height: 784;border: 1px solid ; vertical-align: top; margin:28px}
+.half_form{display: inline-block; width: 534px; height: 784; vertical-align: top; margin:28px}
 .main_title{margin:0 0 20px 0; font-size: 25px; color: #001A5E}
 .main_title:hover{cursor: pointer;}
 .pet_info{height: 40px; background-color: #F7EEE3; text-align: center; line-height: 40px;margin-bottom: 12px;}
@@ -16,11 +17,11 @@ body .inner{height: 784px;}
 
 /* 현재 급여 중인 사료 */
 .container_margin{margin-top:28px; }
-.container_form .title{height: 36px; background-color: #B4C5E3; text-align: center;line-height: 36px; color: #001A5E; font-size: 16px; font-weight: 500;}
+.container_form .title{height: 36px; background-color: #e8f0f9; text-align: center;line-height: 36px; color: #001A5E; font-size: 16px; font-weight: 500;}
 .container_form .title{border: 1px solid #B7C9E8;border-bottom: 0; border-top-left-radius: 10px; border-top-right-radius: 10px;}
 .container_form .contents{border: 1px solid #B7C9E8; border-top: 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 .contents div{display: inline-block; vertical-align: top;}
-.current_img{width: 140px; height: 140px; border-radius: 10px; background-color: #B4C5E3; margin: 20px 40px 0px 40px}
+.current_img{width: 140px; height: 140px; border-radius: 10px; background-color: #e8f0f9; margin: 20px 40px 0px 40px}
 .current_img:hover{cursor: pointer;}
 .contents img {width: 100%;}
 .contents .hash_tag{font-size: 14px; color:#727171; text-align: center;width: 140px; height:52px;}
@@ -46,7 +47,7 @@ body .inner{height: 784px;}
 .recommend_cycle span{font-size: 12px;}
 
 /* 건강고려사항 추천 간식/영양제 */
-.sub_title{text-align: center; font-size: 14px; color: #595757; padding: 10px 0;}
+.contents .sub_title{text-align: center; font-size: 14px; color: #595757; padding: 10px 0; }
 .contents .qr_list{display: flex;justify-content: space-evenly; margin-bottom:10px;}
 .qr_list .qr_form{ text-align: center; margin: 5px 0; width: 90px;}
 .qr_list img{ width: 80px; height: 80px;}
@@ -54,12 +55,13 @@ body .inner{height: 784px;}
 
 
 /* 순환 급여 */
-/* .cycle_view{display: none;} */
+.cycle_view{display: none;}
 .cycle_container{ padding-bottom:260px;}
 .cycle{position: relative;}
-.cycle img {width: 80px;height: 80px;border-radius: 100px;border: 2px solid #b7c9e8;position: absolute;}
+.cycle .cycle_form{position: absolute; width: 80px; height: 80px; border-radius: 100px; border: 2px solid #b7c9e8; text-align: center;}
+.cycle img {width: 70px; margin-top:10px}
 .cycle .icon1 { left: 227px;top:10px}
-.cycle .icon2 {position:absolute; border: 0; left: 227px; top:100px}
+.cycle .icon2 {position:absolute; border: 0; left: 234px; top:100px}
 .cycle .icon3 {position: absolute; left: 147px;top:150px}
 .cycle .icon4 {position: absolute; left: 307px;top:150px}
 .cycle span{font-size: 14px; font-weight: 500;color:#001A5E;width: 100px;}
@@ -68,14 +70,21 @@ body .inner{height: 784px;}
 .cycle .text3 {position: absolute; left: 390px; top:220px}
 .cycle .text4 {position: absolute; left: 330px; top:80px; color: #595757; }
 
-
+/* 샘플 사료 테스트 */
+.sample_test .sample_container{display: flex; justify-content: space-evenly;}
+.sample_test .sub_title{ width: 500px;margin-left: 17px; word-break: keep-all;}
+.sample_test .sample_form{ text-align: center; margin: 19px 0;}
+.sample_test .img_form{ width: 140px; height: 140px; border-radius: 10px; background-color: #e8f0f9;}
+.sample_test p{margin: 10px 0; width: 150px;}
+.sample_test .sample_name{font-size: 14px; font-weight: 600; text-align: center;}
+.sample_test .sample_hash{font-size: 14px; font-weight: 400; text-align: center;}
 
 /* 정기구독 사료 교체 방법 */
-.subscribe_form .number{font-family: "Jalnan"; font-size: 21px; color: #001A5E; width: 80px;height: 60px; text-align: center; line-height: 80px;}
+.subscribe_form .number{font-family: "Jalnan"; font-size: 21px; color: #001A5E; width: 80px;height: 60px; text-align: center; line-height: 70px;}
 .subscribe_form p{display: inline-block; margin-top: 16px;line-height: 8px;}
-.subscribe_form .sub_title{font-size: 14px; font-weight: bold; color:#001A5E;}
-.subscribe_form .explain{ font-size: 13px; font-weight: 300; color:#595757;}
-.subscribe_form hr{width: 500px; margin-left: 18px; border: 1px solid #b7c9e8; }
+.subscribe_form .sub_title{font-size: 14px; font-weight: bold; color:#001A5E; padding: 5px 0; margin-top: 5px}
+.subscribe_form .explain{ font-size: 13px; font-weight: 400; color:#595757; width: 440px;margin-bottom:10px; word-break: keep-all;}
+.subscribe_form hr{width: 500px; margin:0 0 0 18px; border: 1px solid #b7c9e8; }
 
 /* 사료 교체 주의 사항 */
 .caution{ margin-top: 16px; font-size: 14px; color:#001A5E;margin-left: 5px; }
@@ -84,5 +93,5 @@ body .inner{height: 784px;}
 .food_form{position: relative; display: inline-block; margin-top: 16px; text-align: center;}
 .food_form img{ width: 52px;}
 .food_form .percent{position: absolute; font-size: 12px; color: #001A5E; font-weight: bold; left: -16px; top:-4px; }
-.food_form .days{ font-size: 14px; font-weight: 300;color:#595757; left: 10px;top:40px; margin-top: 6px;}
+.food_form .days{ font-size: 14px; font-weight: 400;color:#595757; left: 10px;top:40px; margin-top: 6px;}
 .mix_text {font-size: 14px; color:#595757; text-align: center;margin-top: 6px;}

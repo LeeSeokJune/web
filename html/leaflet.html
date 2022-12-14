@@ -122,17 +122,17 @@
             </div>
         </div>
         <div class="half_form">
-            <div class="container_form cycle_view">
+            <div class="container_form cycle_view" id="cycle_view">
                 <div class="title">순환 급여</div>
                 <div class="contents cycle_container">
                     <p class="sub_title">일정 교체 주기에 따라 식단을 순환하여 급여하는 방식입니다. 다양한 단백질원으로 <br>
                         식단을 구성하여 균형잡힌 식단을 유지할 수 있습니다.
                     </p>
                     <div class="cycle">
-                        <img class="icon1" src="../icons/meat.png">
-                        <img class="icon2" src="../icons/rotation.png">
-                        <img class="icon3" src="../icons/fish.png">
-                        <img class="icon4" src="../icons/poultry.png">
+                        <div class="cycle_form icon1"><img src="../icons/meat.png"></div>
+                        <div class="icon2"><img src="../icons/rotation.png"></div>
+                        <div class="cycle_form icon3"><img src="../icons/fish.png"></div>
+                        <div class="cycle_form icon4"><img src="../icons/poultry.png"></div>
                         <span class="text1">육류</span>
                         <span class="text2">어류</span>
                         <span class="text3">가금류</span>
@@ -145,33 +145,69 @@
 
                 </div>
             </div>
+
+
+            <div class="container_form sample_view" id="sample_view">
+                <div class="title">샘플 사료 테스트</div>
+                <div class="contents sample_test">
+                    <div class="sub_title">루이의 건강사항 등을 고려한 사료 추천 리스트입니다. 함께 동봉된 샘픔을 급여하신 후 교체 여부를 결정해주세요.</div>
+                    <div class="sample_container">
+                        <div class="sample_form" onclick="petfood_dialog(1)">
+                            <div class="img_form" id="img_1">
+                                <img src="../images/웰니스/[웰니스] 심플 스몰브리드 살몬&포테이토.png">
+                            </div>
+                            <p class="sample_name" id="petfood_title_1">[웰니스] 심플 스몰브리드 살몬&포테이토</p>
+                            <p class="sample_hash" id="hash_tag_1">#단일단백질 #연어</p>
+                        </div>
+
+                        <div class="sample_form" onclick="petfood_dialog(2)">
+                            <div class="img_form" id="img_2">
+                                <img src="../images/웰니스/[웰니스] 심플 스몰브리드 살몬&포테이토.png">
+                            </div>
+                            <p class="sample_name" id="petfood_title_2">[웰니스] 심플 스몰브리드 살몬&포테이토</p>
+                            <p class="sample_hash" id="hash_tag_2">#단일단백질 #연어</p>
+                        </div>
+
+                        <div class="sample_form" onclick="petfood_dialog(3)">
+                            <div class="img_form" id="img_3">
+                                <img src="../images/웰니스/[웰니스] 심플 스몰브리드 살몬&포테이토.png">
+                            </div>
+                            <p class="sample_name" id="petfood_title_3">[웰니스] 심플 스몰브리드 살몬&포테이토</p>
+                            <p class="sample_hash" id="hash_tag_3">#단일단백질 #연어</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
             <div class="container_form container_margin">
                 <div class="title">정기구독 사료 교체 방법</div>
                 <div class="contents">
                     <div class="subscribe_form">
                         <div class="number">1</div>
-                        <p>
-                            <span class="sub_title">샘플 사료 테스트</span> <br><br><br>
-                            <span class="explain">권장 교체 시기(4-6개월차) 부터는 루이스홈이 루이가 먹을 수 있는 샘플 사료를<br><br>
+                        <div>
+                            <div class="sub_title">샘플 사료 테스트</div><br>
+                            <div class="explain">권장 교체 시기(4-6개월차) 부터는 루이스홈이 루이가 먹을 수 있는 샘플 사료를
                                 보내드립니다. 샘플 사료 급여 후 교체 여부를 결정합니다.
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                         <hr>
                         <div class="number">2</div>
-                        <p>
-                            <span class="sub_title">사료 변경하기</span> <br><br><br>
-                            <span class="explain">루이스홈 사이트를 통해 교체하고자 하는 사료를 정기배송 결제하면 해당 결제 시점<br><br>
-                                이후부터는 교체된 사료가 정기적으로 배송됩니다.
-                            </span>
-                        </p>
+                        <div>
+                            <div class="sub_title">사료 변경하기</div><br>
+                            <div class="explain">루이스홈 사이트를 통해 교체하고자 하는 사료를 정기배송 결제하면 해당 결제 시점 이후부터는 교체된 사료가 정기적으로 배송됩니다.
+                            </div>
+                        </div>
                         <hr>
                         <div class="number">3</div>
-                        <p>
-                            <span class="sub_title">변경된 사료 평가하기</span> <br><br><br>
-                            <span class="explain">바꾼 사료를 급여한 이후 카카오톡을 통해 루이스홈 설문 리스트를 보내드립니다.<br><br>
-                                간단한 질문에 응답해주시면 다음 교체 시기에 더욱 맞춤화된 추천을 받을 수 있습니다.
-                            </span>
-                        </p>
+                        <div>
+                            <div class="sub_title">변경된 사료 평가하기</div><br>
+                            <div class="explain">바꾼 사료를 급여한 이후 카카오톡을 통해 루이스홈 설문 리스트를 보내드립니다. 간단한 질문에 응답해주시면 다음 교체 시기에 더욱
+                                맞춤화된 추천을 받을 수 있습니다.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

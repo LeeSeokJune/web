@@ -6,7 +6,18 @@ var qr_text_kor = ['다이어트', '관절케어', '신장케어', '췌장케어
 var qr_index = [1,0];
 window.onload = function(){
     document.querySelector('.main_title').addEventListener('click',show_input_dialog);
+    document.querySelector('.sample_view > .title').addEventListener('click', onclick_view0)
+    document.querySelector('.cycle_view > .title').addEventListener('click', onclick_view1)
     // petfood_dialog(0);
+}
+
+function onclick_view0(){
+    document.querySelector('.sample_view').style.display = 'none';
+    document.querySelector('.cycle_view').style.display = 'block';
+}
+function onclick_view1(){
+    document.querySelector('.sample_view').style.display = 'block';
+    document.querySelector('.cycle_view').style.display = 'none';
 }
 
 function show_input_dialog(){
@@ -35,7 +46,7 @@ function set_petfood_index(number,index){
     console.log(petfood)
     dialog.close();
     document.querySelector("#img_"+number +" > img").src = "../images/"+petfood['brand']+'/'+petfood['name']+".png";
-    
+    document.querySelector("#petfood_title_"+number).textContent = petfood['name']
     for(var index=0; index<petfood['hash'].length;index++){
         hash += '#'+petfood['hash'][index]+'<br>'
     }
@@ -85,7 +96,8 @@ function set_pet_info(){
     document.querySelector('.pet_info').textContent = pet_info
     document.querySelector('#alg').textContent = list_to_str([...pet['alg'], ...pet['alg_sub']])
     document.querySelector('#health').textContent = list_to_str(pet['health'])
-    document.querySelector('.explain').innerHTML = "권장 교체 시기(4-6개월차) 부터는 루이스홈이 "+pet['name']+"가 먹을 수 있는 샘플 사료를<br><br>보내드립니다. 샘플 사료 급여 후 교체 여부를 결정합니다."
+    document.querySelector('.explain').innerHTML = "권장 교체 시기(4-6개월차) 부터는 루이스홈이 "+pet['name']+"가 먹을 수 있는 샘플 사료를 보내드립니다. 샘플 사료 급여 후 교체 여부를 결정합니다."
+    document.querySelector('.sample_test > .sub_title').textContent = pet['name']+"의 건강사항 등을 고려한 사료 추천 리스트입니다. 함께 동봉된 샘픔을 급여하신 후 교체 여부를 결정해주세요."
     // TODO : 정기구독사료 교체 방법에 이름 추가
 }
 
