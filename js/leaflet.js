@@ -11,6 +11,14 @@ window.onload = function(){
     // petfood_dialog(0);
 }
 
+function onchange_id(member_id){
+    pet['member_id'] = member_id.value;
+}
+
+function onchange_name(name){
+    pet['name'] = name.value;
+}
+
 function onclick_view0(){
     document.querySelector('.sample_view').style.display = 'none';
     document.querySelector('.cycle_view').style.display = 'block';

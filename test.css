@@ -1,0 +1,7 @@
+.xans-member-login .login fieldset ul.sns_area{padding:0;}
+.xans-member-login .login fieldset li.sns_li{padding:0;width:190px; height:30px; text-align: center;line-height:30px;}
+.sns_area{ width:380px;}
+.sns_area img{height: 30px; display: inline-block;}
+.sns_kakao{background-color:#F7E600; }
+.sns_naver{background-color: #03cf5d;}
+.sns_naver a{color: white}
