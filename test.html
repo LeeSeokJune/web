@@ -1,5 +1,21 @@
 <!--@layout(/layout/basic/layout.html)-->
-<!--@css(/_lee/css/layout.css)-->
+<style>
+    .btnLogin_bk {
+        font-size: 16px
+    }
+
+    .btnLogin_wh {
+        font-size: 16px
+    }
+
+    .login_title {
+        font-size: 14px
+    }
+
+    .find_text {
+        font-size: 14px;
+    }
+</style>
 <div class="path">
     <span>현재 위치</span>
     <ol>
@@ -21,39 +37,43 @@ $forbidIpUrl = member/adminFail.html
     <div class="login">
         <fieldset>
             <legend>회원로그인</legend>
-            <div class="login_title">ID</div>
+            <div class="login_title">아이디</div>
             <label class="id ePlaceholder" title="아이디">{$form.member_id}</label>
-            <div class="login_title">PASSWORD</div>
+            <div class="login_title">비밀번호</div>
             <label class="password ePlaceholder" title="비밀번호">{$form.member_passwd}</label>
             <div class="cboth security">
                 {$form.member_check_save_id}
                 {$form.member_check_secret_connect}
                 <ul>
-                    <li><a href="/member/id/find_id.html">FIND ID</a></li>
+                    <li><a href="/member/id/find_id.html" class="find_text">아이디 찾기</a></li>
                     <li>/</li>
-                    <li><a href="/member/passwd/find_passwd_info.html">FIND PASSWORD</a></li>
+                    <li><a href="/member/passwd/find_passwd_info.html" class="find_text">비밀번호 찾기</a></li>
                 </ul>
             </div>
 
-            <a href="#none" class="cboth btnLogin_bk" onclick="{$action_func_login}">LOGIN</a>
+            <a href="#none" class="cboth btnLogin_bk" onclick="{$action_func_login}">로그인</a>
             <ul class="sns_area">
-                <li class="{$display_kakao|display} sns_li sns_kakao">
-                    <a href="#none" onclick="{$kakao_func_login}"><img src="/icons/kakao.png">카카오로그인</a>
+                <li class="{$display_kakao|display} sns_form">
+                    <a href="#none" onclick="{$kakao_func_login}"><img
+                            src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_kakao_login.gif"
+                            alt="카카오계정 로그인" /></a>
                 </li>
-                <li class="{$display_naver|display} sns_li sns_naver">
-                    <a href="#none" onclick="{$naver_func_login}"><img src="/icons/naver.png">네이버 로그인</a>
+                <li class="{$display_naver|display} sns_form">
+                    <a href="#none" onclick="{$naver_func_login}"><img
+                            src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_naver_login.gif"
+                            alt="네이버 로그인" /></a>
                 </li>
-                <li class="{$display_facebook|display} sns_li">
+                <li class="{$display_facebook|display}">
                     <a href="#none" onclick="{$facebook_func_login}"><img
                             src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif"
                             alt="Facebook으로 로그인" /></a>
                 </li>
-                <li class="{$display_google|display} sns_li">
+                <li class="{$display_google|display}">
                     <a href="#none" onclick="{$google_func_login}"><img
                             src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif"
                             alt="구글 로그인" /></a>
                 </li>
-                <li class="{$display_line|display} sns_li">
+                <li class="{$display_line|display}">
                     <a href="#none" onclick="{$line_func_login}"><img
                             src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_line_login.gif"
                             alt="LINE 로그인" /></a>
@@ -61,7 +81,7 @@ $forbidIpUrl = member/adminFail.html
             </ul>
             <div class="join_box">
                 아직 회원이 아니신가요?<br />회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다.<br /><br />
-                <a href="/member/join.html" class="btnLogin_wh">SIGN UP</a>
+                <a href="/member/join.html" class="btnLogin_wh">회원가입</a>
             </div>
 
             <div class="join_box {$display_nomember|display}" id="noMemberWrap">
@@ -88,3 +108,7 @@ $orderDetailUrl = /myshop/order/list.html
     </dl>
     <p class="ec-base-button gColumn"><button type="submit" class="btnLogin_wh">ORDER SEARCH</button></p>
 </div>
+
+
+img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_naver_login.gif"
+img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_kakao_login.gif"
